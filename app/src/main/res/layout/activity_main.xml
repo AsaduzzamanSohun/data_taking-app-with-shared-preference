@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Your Info"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Name"
+        android:padding="7dp"
+        android:textSize="18sp"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
+
+    <EditText
+        android:id="@+id/email_text"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Email"
+        android:padding="7dp"
+        android:textSize="18sp"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
+    <EditText
+        android:id="@+id/phone_text"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Phone"
+        android:padding="7dp"
+        android:textSize="18sp"
+        android:inputType="phone"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
+    <EditText
+        android:id="@+id/subject_text"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Subject"
+        android:padding="7dp"
+        android:textSize="18sp"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
+
+    <EditText
+        android:id="@+id/university_text"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="University"
+        android:padding="7dp"
+        android:textSize="18sp"
+        android:inputType="text"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:background="#C1F387"
+            android:layout_marginEnd="7dp"/>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next page"
+            android:textAllCaps="false"
+            android:background="#E9FA42"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
